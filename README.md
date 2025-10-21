@@ -33,8 +33,6 @@ The avm images we use was got from ps2.0 in https://cslinzhang.github.io/deepps/
 In modify_parklot.py, it takes inpainted avm image and original mask from image_inpating.py, then produce new parklot.
 
 
-
-
 3. Ref:
 @article{suvorov2021resolution,
   title={Resolution-robust Large Mask Inpainting with Fourier Convolutions},
