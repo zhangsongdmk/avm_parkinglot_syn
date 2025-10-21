@@ -19,12 +19,13 @@
 
 ### 2.1 Remove original parklot by image inpainting.
  In image_inpainting.py, 
+ ```
     input_location = './data/pano004220.jpg'
     input_mask_location_ori = './data/pano004220.png'
     output_location = input_location.replace('.','oimage.')
     inpaint_image(input_location, input_mask_location_ori, output_location)
  #The code was mofifyed from modelscope https://www.modelscope.cn/models/iic/cv_fft_inpainting_lama/summary.
-
+```
 ### 2.2 Parklot augmentation.
 The avm images we use was got from ps2.0 in https://cslinzhang.github.io/deepps/.
 In modify_parklot.py, it takes inpainted avm image and original mask from image_inpating.py, then produce new parklot.
