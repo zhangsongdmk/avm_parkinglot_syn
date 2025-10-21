@@ -1,9 +1,10 @@
-# avm_parkinglot_syn
+# Enhancing Parking-slot Detection with Efficient Synthetic Data Generation
 
 
 
 
 1. Enviroment setup
+
 1.1 Image inpainting model.
  We use LaMa for image inpainting. As we don't want to be bothered by different pytorch versions, we recommand using modelscope.
  pip install modelscope==1.13.0
@@ -15,6 +16,7 @@
    
 
 2. Image process pipeline
+
 2.1 Remove original parklot by image inpainting.
  In image_inpainting.py, 
     input_location = './data/pano004220.jpg'
@@ -34,6 +36,7 @@ In modify_parklot.py, it takes inpainted avm image and original mask from image_
 
 
 3. Ref:
+
 @article{suvorov2021resolution,
   title={Resolution-robust Large Mask Inpainting with Fourier Convolutions},
   author={Suvorov, Roman and Logacheva, Elizaveta and Mashikhin, Anton and Remizova, Anastasia and Ashukha, Arsenii and Silvestrov, Aleksei and Kong, Naejin and Goka, Harshith and Park, Kiwoong and Lempitsky, Victor},
