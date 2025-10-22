@@ -30,8 +30,15 @@
 The avm images we use was got from ps2.0 in https://cslinzhang.github.io/deepps/.
 
 In modify_parklot.py, it takes inpainted avm image and original mask from image_inpating.py, then produce new parklot.
+In the code examples, we get empty image 'data/pano004220oimage.jpg' from original image 'data/pano004220.jpg' and its mask 'data/pano004220.png'.
+Finally we get finla new image 'result_img0.jpg' and mask 'result/result_mask0.png', from  'data/pano004220oimage.jpg' and  'data/pano004220.png'.
 
-
+### 2.3 Add new parklot.
+The avm images we use was got from ps2.0 in https://cslinzhang.github.io/deepps/.
+First get inpainting parklot image by image_inpainting.py, then generate new parklot by gen_parklot.py, finally get new image and new mask.
+In the code examples, we get empty image 'data/20161102-161oimage.jpg' from original image 'data/20161102-161.jpg' and its mask 'data/20161102-161.png'.
+Then we generate new parklot mask 'data/multi_slotmask.png'.
+Finally we get finla new image '20161102-161_new.jpg' and mask 'result/20161102-161_mask1.png', from  'data/20161102-161oimage.jpg' and  'data/multi_slotmask.png'.
 
 ## 3. Ref:
 
