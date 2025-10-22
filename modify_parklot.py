@@ -100,3 +100,10 @@ if __name__ == "__main__":
     cv2.imwrite('./result/result_img1.jpg',result_img)
     cv2.imwrite('./result/result_mask1.png', new_mask)
 
+    mask = cv2.imread('data/multi_slotmask.png')
+    img = cv2.imread('data/20161102-161oimage.jpg')
+    result_img, new_mask = modify_slot_psv(img, mask)
+    cv2.imwrite('result/20161102-161_new.jpg',result_img)
+    cv2.imwrite('result/20161102-161_mask1.png', new_mask)
+
+
